@@ -50,16 +50,19 @@
     padding-top:14px;padding-bottom:14px;
   }
   .brand{
-    display:flex;align-items:center;gap:10px;
+    display:flex;align-items:center;gap:13px;
+    min-width:0;
   }
   .brand .logo-badge{
-    height:44px;flex-shrink:0;
+    height:52px;flex-shrink:0;
     display:flex;align-items:center;
   }
-  .brand .logo-badge img{height:44px;width:auto;object-fit:contain;}
+  .brand .logo-badge img{
+    height:52px;width:auto;object-fit:contain;
+  }
   .brand-name{
     font-family:'Playfair Display',serif;
-    font-weight:600;font-size:1.15rem;color:var(--rust);
+    font-weight:600;font-size:1.28rem;color:var(--coral);
     line-height:1.15;
   }
   .topbar .cta-mini{
@@ -365,6 +368,28 @@
     .journey-labels .jl-date{font-size:.72rem;}
     .reassure{padding:36px 24px;}
     .for-banner{padding:30px 22px;}
+    .topbar .wrap{
+      padding-top:12px;padding-bottom:12px;
+      gap:12px;
+    }
+    .brand .logo-badge,
+    .brand .logo-badge img{height:46px;}
+    .brand-name{font-size:1.1rem;}
+    .topbar .cta-mini{
+      font-size:.78rem;
+      padding:9px 16px;
+      flex-shrink:0;
+    }
+  }
+  @media (max-width:480px){
+    .brand{gap:10px;}
+    .brand .logo-badge,
+    .brand .logo-badge img{height:40px;}
+    .brand-name{font-size:.95rem;}
+    .topbar .cta-mini{
+      font-size:.72rem;
+      padding:8px 12px;
+    }
   }
 
   :focus-visible{outline:2px solid var(--coral);outline-offset:3px;}
@@ -376,7 +401,7 @@
   <div class="wrap">
     <div class="brand">
       <div class="logo-badge">
-        <img src="https://assets.cdn.filesafe.space/jNqy5QsBJRJ9cjslwRNp/media/69c538d7eac1b7a78ff02f09.jpg" alt="Anna Brooke Healing logo">
+        <img src="assets/anna-brooke-healing-logo.png" alt="Anna Brooke Healing logo">
       </div>
       <div class="brand-name">Anna Brooke Healing</div>
     </div>
