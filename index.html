@@ -46,8 +46,9 @@
     border-bottom:1px solid rgba(22,74,80,.1);
   }
   .topbar .wrap{
+    max-width:none;
     display:flex;align-items:center;justify-content:space-between;
-    padding-top:18px;padding-bottom:18px;
+    padding:18px 32px;
   }
   .brand{
     display:flex;align-items:center;gap:14px;
@@ -56,9 +57,11 @@
   .brand .logo-badge{
     height:80px;flex-shrink:0;
     display:flex;align-items:center;
+    overflow:visible;
   }
   .brand .logo-badge img{
     height:80px;width:auto;object-fit:contain;
+    display:block;
   }
   .brand-name{
     font-family:'Playfair Display',serif;
@@ -369,7 +372,7 @@
     .reassure{padding:36px 24px;}
     .for-banner{padding:30px 22px;}
     .topbar .wrap{
-      padding-top:14px;padding-bottom:14px;
+      padding:14px 20px;
       gap:12px;
     }
     .brand .logo-badge,
